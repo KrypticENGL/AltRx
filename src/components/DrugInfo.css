@@ -1,0 +1,124 @@
+.drug-info-card {
+    background: #18181b;
+    /* Zinc 900 */
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+    text-align: left;
+    border: 1px solid #27272a;
+    /* Zinc 800 */
+}
+
+.drug-info-content {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.drug-details-column {
+    flex: 1;
+    min-width: 300px;
+}
+
+.drug-comparison-column {
+    flex: 1.5;
+    min-width: 400px;
+    background: #27272a;
+    /* Zinc 800 */
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #3f3f46;
+    /* Zinc 700 */
+}
+
+@media (max-width: 900px) {
+    .drug-info-content {
+        flex-direction: column;
+    }
+
+    .drug-comparison-column {
+        width: 100%;
+        min-width: auto;
+        box-sizing: border-box;
+    }
+}
+
+.drug-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #f1f5f9;
+    /* Slate 100 */
+    margin-bottom: 0.5rem;
+}
+
+.drug-subtitle {
+    font-size: 1.1rem;
+    color: #94a3b8;
+    /* Slate 400 */
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+.drug-section {
+    margin-bottom: 1.5rem;
+}
+
+.drug-section h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #2dd4bf;
+    /* Teal 400 */
+    margin-bottom: 0.75rem;
+    border-bottom: 2px solid #3f3f46;
+    padding-bottom: 0.5rem;
+}
+
+.ingredient-content p {
+    color: #cbd5e1;
+    /* Slate 300 */
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+}
+
+.no-data {
+    color: #64748b;
+    font-style: italic;
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    font-size: 0.95rem;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #3f3f46;
+}
+
+.comparison-table th {
+    font-weight: 600;
+    color: #2dd4bf;
+    /* Teal 400 */
+    background-color: #18181b;
+}
+
+.comparison-table td {
+    color: #e2e8f0;
+}
+
+.comparison-table tr:last-child td {
+    border-bottom: none;
+}
+
+.price-cell {
+    font-weight: 600;
+    color: #2dd4bf;
+    /* Teal 400 */
+}

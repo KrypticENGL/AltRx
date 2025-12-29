@@ -1,0 +1,196 @@
+.educational-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    color: #e2e8f0;
+    text-align: left;
+}
+
+.edu-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.edu-title {
+    font-size: 3rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #2dd4bf, #0d9488);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1rem;
+}
+
+.edu-subtitle {
+    font-size: 1.25rem;
+    color: #94a3b8;
+    font-style: italic;
+}
+
+.edu-section {
+    margin-bottom: 4rem;
+    background: #18181b;
+    /* Zinc 900 */
+    padding: 2rem;
+    border-radius: 16px;
+    border: 1px solid #27272a;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+}
+
+.section-title {
+    font-size: 1.8rem;
+    color: #2dd4bf;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #27272a;
+    padding-bottom: 0.5rem;
+}
+
+.section-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #cbd5e1;
+}
+
+.section-content p {
+    margin-bottom: 1.5rem;
+}
+
+.edu-list {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+}
+
+.edu-list li {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.edu-list li::before {
+    content: '•';
+    color: #2dd4bf;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.bioequivalence-graph {
+    margin-top: 2rem;
+    text-align: center;
+    background: #27272a;
+    padding: 1.5rem;
+    border-radius: 12px;
+}
+
+.bioequivalence-graph h3 {
+    color: #f1f5f9;
+    margin-bottom: 1rem;
+}
+
+.graph-svg {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    background: #18181b;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.graph-caption {
+    font-size: 0.9rem;
+    color: #94a3b8;
+    margin-top: 1rem;
+    font-style: italic;
+}
+
+.comparison-cards {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.card {
+    flex: 1;
+    padding: 1.5rem;
+    border-radius: 12px;
+    background: #27272a;
+    border: 1px solid #3f3f46;
+}
+
+.card h3 {
+    color: #2dd4bf;
+    margin-bottom: 1rem;
+}
+
+.accordion-item {
+    border: 1px solid #3f3f46;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    background: #27272a;
+}
+
+.accordion-header {
+    width: 100%;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    border: none;
+    color: #f1f5f9;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: left;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.accordion-header:hover {
+    background: #3f3f46;
+}
+
+.accordion-icon {
+    font-size: 1.5rem;
+    color: #2dd4bf;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease;
+    background: #18181b;
+}
+
+.accordion-item.active .accordion-content {
+    max-height: 200px;
+    /* Adjust as needed */
+    padding: 1.5rem;
+    border-top: 1px solid #3f3f46;
+}
+
+.glossary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.glossary-item {
+    background: #27272a;
+    padding: 1rem;
+    border-radius: 8px;
+    border-left: 4px solid #2dd4bf;
+}
+
+.glossary-item strong {
+    color: #2dd4bf;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .comparison-cards {
+        flex-direction: column;
+    }
+}

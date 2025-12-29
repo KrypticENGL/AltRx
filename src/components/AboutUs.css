@@ -1,0 +1,103 @@
+.about-us-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    color: #e2e8f0;
+    text-align: left;
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.about-title {
+    font-size: 3rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #2dd4bf, #0d9488);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1rem;
+}
+
+.about-subtitle {
+    font-size: 1.25rem;
+    color: #94a3b8;
+    font-style: italic;
+}
+
+.about-section {
+    margin-bottom: 4rem;
+    background: #18181b;
+    /* Zinc 900 */
+    padding: 2rem;
+    border-radius: 16px;
+    border: 1px solid #27272a;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+}
+
+.section-title {
+    font-size: 1.8rem;
+    color: #2dd4bf;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #27272a;
+    padding-bottom: 0.5rem;
+}
+
+.section-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #cbd5e1;
+}
+
+.section-content p {
+    margin-bottom: 1.5rem;
+}
+
+.section-content strong {
+    color: #f1f5f9;
+    font-weight: 600;
+}
+
+.data-list {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+}
+
+.data-list li {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.data-list li::before {
+    content: '•';
+    color: #2dd4bf;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.disclaimer-text {
+    font-style: italic;
+    color: #94a3b8;
+    border-left: 4px solid #2dd4bf;
+    padding-left: 1rem;
+}
+
+.developer-info {
+    background: #27272a;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+}
+
+.developer-info p {
+    margin-bottom: 0.5rem;
+}
+
+.developer-info p:last-child {
+    margin-bottom: 0;
+}

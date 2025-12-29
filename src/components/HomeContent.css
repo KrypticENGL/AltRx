@@ -1,0 +1,177 @@
+.home-content-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+    color: #e2e8f0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+/* Trust Row */
+.trust-row {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.trust-item {
+    flex: 1;
+    min-width: 250px;
+    background: #18181b;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid #27272a;
+    transition: transform 0.3s ease;
+}
+
+.trust-item:hover {
+    transform: translateY(-5px);
+    border-color: #2dd4bf;
+}
+
+.trust-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.trust-item h3 {
+    color: #f1f5f9;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.trust-item p {
+    color: #94a3b8;
+    font-size: 0.95rem;
+}
+
+/* Trending Searches */
+.trending-section h3 {
+    color: #94a3b8;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.trending-chips {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.chip {
+    background: #27272a;
+    color: #2dd4bf;
+    border: 1px solid #3f3f46;
+    padding: 0.5rem 1.2rem;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+}
+
+.chip:hover {
+    background: rgba(45, 212, 191, 0.1);
+    border-color: #2dd4bf;
+    transform: scale(1.05);
+}
+
+/* How It Works */
+.how-it-works h2 {
+    font-size: 2rem;
+    background: linear-gradient(135deg, #2dd4bf, #0d9488);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 2rem;
+}
+
+.steps-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.step-card {
+    flex: 1;
+    min-width: 250px;
+    background: #18181b;
+    padding: 2rem;
+    border-radius: 16px;
+    border: 1px solid #27272a;
+    position: relative;
+    overflow: hidden;
+}
+
+.step-number {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    font-size: 4rem;
+    font-weight: 800;
+    color: rgba(45, 212, 191, 0.1);
+    z-index: 0;
+}
+
+.step-card h3 {
+    color: #2dd4bf;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    position: relative;
+    z-index: 1;
+}
+
+.step-card p {
+    color: #cbd5e1;
+    position: relative;
+    z-index: 1;
+}
+
+/* Educational Hook */
+.edu-hook-banner {
+    background: linear-gradient(135deg, #134e4a, #0f172a);
+    /* Dark Teal to Dark Slate */
+    padding: 3rem;
+    border-radius: 20px;
+    border: 1px solid #2dd4bf;
+    box-shadow: 0 0 20px rgba(45, 212, 191, 0.1);
+}
+
+.edu-hook-content h2 {
+    font-size: 2rem;
+    color: #f1f5f9;
+    margin-bottom: 1rem;
+}
+
+.edu-hook-content p {
+    font-size: 1.1rem;
+    color: #cbd5e1;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.edu-button {
+    background: #2dd4bf;
+    color: #0f172a;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.edu-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(45, 212, 191, 0.4);
+    background: #5eead4;
+}

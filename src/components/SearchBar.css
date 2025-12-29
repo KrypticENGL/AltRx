@@ -1,0 +1,96 @@
+.search-wrapper {
+    position: relative;
+    width: 800px;
+    max-width: 95%;
+    margin: 0 auto;
+    z-index: 100;
+}
+
+.search-bar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 10px 16px;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+}
+
+.search-input {
+    flex: 1;
+    padding: 14px 24px;
+    font-size: 1.1rem;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+}
+
+.search-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.search-input:focus {
+    box-shadow: none;
+}
+
+.search-button {
+    padding: 14px 32px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: white;
+    background: linear-gradient(135deg, #2dd4bf, #0d9488);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.search-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(110, 142, 251, 0.4);
+}
+
+.search-button:active {
+    transform: scale(0.98);
+}
+
+.suggestions-list {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    right: 0;
+    background: rgba(24, 24, 27, 0.95);
+    /* Zinc 900 with opacity */
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(45, 212, 191, 0.2);
+    /* Teal border */
+    border-radius: 16px;
+    margin-top: 8px;
+    padding: 8px 0;
+    list-style: none;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    overflow: hidden;
+}
+
+.suggestions-list li {
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    text-align: left;
+    color: #e2e8f0;
+    /* Slate 200 */
+}
+
+.suggestions-list li:hover {
+    background-color: rgba(45, 212, 191, 0.1);
+    /* Teal hover */
+    color: #2dd4bf;
+    /* Teal text */
+}
